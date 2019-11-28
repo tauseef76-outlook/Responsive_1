@@ -1,89 +1,58 @@
-<html>
-  <head>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./data.css">
-  </head>
-  
-  <body>
-    <div class="container">
-    <form>
-      <div class="form-group row">
-        <div class="form-group col-md-6">
-            <label>First Name </label>
-            <input id="fname" type="text" name="fname" placeholder="Enter First Name" required="required"></input>
-        </div>
-        
-        <div class="form-group col-md-6">
-            <label>Last Name </label>
-            <input id="lname" type="text" name="lname" placeholder="Enter Last Name" required="required"></input>
-        </div>
-      </div>
-  
-      <div class="row">
-        <div class="col-md-6">
-            <label>E-Mail: </label>
-          <input id="email" type="email" name="email" placeholder="Enter Email" required="required"></input>
-        </div>
+<!DOCTYPE html>
+  <html>
+    <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" type="text/css" href="./data.css">
+    </head>
+    <body>
+
+      <h2>Media Queries</h2>
+      <p>Resize the browser window.</p>
+
+      <p>Make sure you reach the breakpoint at 800px when resizing this frame.</p>
+
+      <div class="left">
+        <img src="https://cdn.pocket-lint.com/r/s/660x/assets/images/147514-tv-feature-mcu-timeline-image2-ycktdidhvq.png?v1">
+        <p>1.Captain America: The First Avenger (2011)</p>
+        Captain America is the fifth Marvel Studios film, with Iron Man, The Hulk, and Thor all having films before Cap. But it's the first film on our list because the events take place first - during World War II.
+        <br />
       </div>
 
-      <div class="form-group row">
-        <div class='form-group col-md-6'>
-            <label>Years you've survived</label>
-           <input id="age" type="number" name="age" placeholder="Enter Age" required="required"></input>
-        </div>
-
-        <div class="form-group col-md-6">
-          Gender: 
-                <label class="btn btn-light-blue form-check-label">
-                <input class="form-check-input" type="radio" name="gender" id="gen" value="female" autocomplete="off"> Female
-              </label>
-              <label class="btn btn-light-blue form-check-label">
-                <input class="form-check-input" type="radio" name="gender" id="gen" value='male' autocomplete="off"> Male
-              </label>
-        </div>
+      <div class="mid">
+        <img src="https://cdn.pocket-lint.com/r/s/660x/assets/images/147514-tv-feature-mcu-timeline-image3-1acqwqkru7.png?v1">
+        <p>2. Captain Marvel (2019)</p>
+        Captain America is the fifth Marvel Studios film, with Iron Man, The Hulk, and Thor all having films before Cap. But it's the first film on our list because the events take place first - during World War II.
+        <br />
       </div>
 
-      <div class="form-group purple-border row">
-        <div class="col-md-6">
-            <label>About Me:</label>
-            <textarea id="about" class="form-control" id="about_me" rows="3" placeholder="Write about your achievements and contributions. Something which helps you to stand out. Its ok to brag..."></textarea>
-          </div>
+      <div class="right">
+        <img src="https://cdn.pocket-lint.com/r/s/660x/assets/images/147514-tv-feature-mcu-timeline-image4-g6i1nzka4f.png?v1">
+        <p>3. Iron Man (2008)</p>
+        According to the official Marvel timeline, Iron Man takes place in 2010. It's all about genius/inventor/philanthropist/playboy Tony Stark, played by Robert Downey Jr.
+        <br />
+      </div>
+      <br />
+
+       <div class="left">
+        <img src="https://cdn.pocket-lint.com/r/s/660x/assets/images/147514-tv-feature-mcu-timeline-image2-ycktdidhvq.png?v1">
+        <p>1.Captain America: The First Avenger (2011)</p>
+        Captain America is the fifth Marvel Studios film, with Iron Man, The Hulk, and Thor all having films before Cap. But it's the first film on our list because the events take place first - during World War II.
+        <br />
       </div>
 
-<button type="submit" class="btn btn-primary" onclick="storage()">SUBMIT</button>
+      <div class="mid">
+        <img src="https://cdn.pocket-lint.com/r/s/660x/assets/images/147514-tv-feature-mcu-timeline-image3-1acqwqkru7.png?v1">
+        <p>2. Captain Marvel (2019)</p>
+        Captain America is the fifth Marvel Studios film, with Iron Man, The Hulk, and Thor all having films before Cap. But it's the first film on our list because the events take place first - during World War II.
+        <br />
+      </div>
 
-    </form>
-</div>
-  </body>
+      <div class="right">
+        <img src="https://cdn.pocket-lint.com/r/s/660x/assets/images/147514-tv-feature-mcu-timeline-image4-g6i1nzka4f.png?v1">
+        <p>3. Iron Man (2008)</p>
+        According to the official Marvel timeline, Iron Man takes place in 2010. It's all about genius/inventor/philanthropist/playboy Tony Stark, played by Robert Downey Jr.
+        <br />
+      </div>
 
-  <script>
-    function storage(){
-      const fname = document.getElementById('fname');
-      const fn_value = fname.value;
-
-      const lname = document.getElementById('lname');
-      const ln_value = lname.value;
-
-      const age = document.getElementById('age');
-      const age_value = age.value;
-
-      const about = document.getElementById('about');
-      const abt_value = about.value;
-
-     localStorage.setItem('fname',fn_value);
-     localStorage.setItem('lname',ln_value);
-
-     localStorage.setItem('age',age_value);
-     localStorage.setItem('about',abt_value);
-
-
-     var ele = document.getElementsByName('gender');
-     for (var i=0;i<ele.length;++i){
-      if(ele[i].checked){
-        let val = ele[i].value;
-         localStorage.setItem('gender',val);
-      }
-     }
-    }
-  </script>
-</html>
+    </body>
+  </html>

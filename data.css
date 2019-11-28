@@ -1,23 +1,57 @@
+
+* {
+  box-sizing:border-box;
+}
+
 body{
-  margin:20px;
-  padding-left:30px;
+  text-align: center;
+  padding:10px;
+  margin:5px;
 }
 
-.container{
-  border: 3px solid #ba68c8;
-  padding:30px;
-  margin:10px;
+.left {
+  background-color: #5499c7;
+  padding:20px;
+  float:left;
+  width:30%;
+  margin: 10px;
 }
 
-.purple-border textarea {
-    border: 1px solid #ba68c8;
-}
-.purple-border .form-control:focus {
-    border: 1px solid #ba68c8;
-    box-shadow: 0 0 0 0.2rem rgba(186, 104, 200, .25);
+.left img{
+  width: 100%;
+  height: auto;
 }
 
-.row{
-  margin:10px;
-  #padding:5px;
+.mid {
+  background-color: #f9e79f;
+  padding:20px;
+  float:left;
+  width:30%;
+  margin: 10px;
+}
+
+.mid img{
+  width: 100%;
+  height: auto;
+}
+
+
+.right {
+  background-color: #ccd1d1;
+  padding:20px;
+  float:left;
+  width:30%;
+  margin: 10px;
+}
+
+.right img{
+  width: 100%;
+  height: auto;
+}
+
+/* Use a media query to add a break point at 800px: */
+@media screen and (max-width:800px) {
+  .left, .main, .right {
+    width:100%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
 }
